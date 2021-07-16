@@ -1,0 +1,42 @@
+CREAR APLICACION CON LOS SIGUIENTES REQUERIMIENTOS
+
+Aplicación que maneje la creacion de empleados. 
+
+Para cada empleado, al ser ingresado al sistema, se requieren los siguientes datos:
+
+Cedula
+Codigo (Generado por la aplicacion)
+Nombre
+ Apellido
+Email
+Telefono
+Departamento
+Cargo
+Precio por hora
+Horas trabajadas
+Salario Neto (Calculado por la aplicacion)
+Nota 1: Para generar el codigo del empleado, la nomenclatura requerida es: las 3 primeras letras del departamento + una secuencia de 4 digitos.
+
+Nota 2: La organizacion clasifica a los empleados en tres categorías, con las siguientes especificaciones:
+
+Gerencial: Reciben un bono del 50% de su salario, al cobrar
+Administrativo: Reciben un bono del 25% de su salario al cobrar
+Operativo: Reciben un bono del 10% de su salario al cobrar
+Requerimientos de diseño:
+
+a)    En el codigo cliente (la clase principal) se desea tener un adecuado nivel de desacoplamiento de las clases del programa. Por tanto se requiere que implemente el patron de diseño Factory. Analice el escenario e implemente el referido patrón para manejar la creación de las clases.
+
+b)    Por políticas de la organización, únicamente puede haber un empleado de la categoria gerencial activo en la empresa. De las demás categorías, puede haber múltiples empleados. Aplicando el patrón de diseño Singleton, asegúrese de que no se pueda crear una segunda instancia de la referida clase.
+
+c)    Elabore un diagrama UML donde presente su propuesta de diseño para esta aplicación. Es un solo UML el cual debe reflejar la integración de los dos patrones de diseño requeridos para esta tarea.
+
+Requerimientos de funcionalidad:
+
+Incluya las siguientes funcionalidades:
+
+Crear: Crear un empleado
+Ver: Visualizar los empleados que hayan sido creados
+Cobrar: Aquí debe realizar el cálculo del salario tomando en cuenta el precio x hora y las horas trabajadas. Tome en cuenta tambien el bono que cada empleado ha de recibir según su categoría.
+Recibo de pago: De los empleados existentes, presentar los siguientes datos: Codigo, Nombre, Categoria, Precio x Hora, Horas trabajadas, Salario Neto
+(No olvide el método para generar los códigos)
+Haga uso de listas para almacenar de manera estática los datos de los empleados durante la ejecución de la aplicación.
